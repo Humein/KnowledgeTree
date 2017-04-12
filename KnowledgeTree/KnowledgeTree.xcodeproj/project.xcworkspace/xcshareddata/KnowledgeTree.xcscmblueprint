@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6C9BA979EBBA556C7A86B8766929E3FF9BA6439F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C4E3116EEDD907D2DB86438041AC6E08FE812187" : 9223372036854775807,
+    "6C9BA979EBBA556C7A86B8766929E3FF9BA6439F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "967B0BCF-FA2F-42B3-99E2-76EED9CC5105",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C4E3116EEDD907D2DB86438041AC6E08FE812187" : "",
+    "6C9BA979EBBA556C7A86B8766929E3FF9BA6439F" : "KnowledgeTree\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KnowledgeTree",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "KnowledgeTree\/KnowledgeTree.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/QinKingHan\/KnowledgeTree.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6C9BA979EBBA556C7A86B8766929E3FF9BA6439F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "192.168.199.100:Tiku_iOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4E3116EEDD907D2DB86438041AC6E08FE812187"
+    }
+  ]
+}
