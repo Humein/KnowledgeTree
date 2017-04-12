@@ -6,16 +6,17 @@
 //  Copyright © 2017年 xinxin. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TreeViewController.h"
 
-@interface ViewController ()
+@interface TreeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TreeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor  = [UIColor redColor];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
