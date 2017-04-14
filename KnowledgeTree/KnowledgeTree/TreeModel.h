@@ -26,4 +26,6 @@
 
 +(NSArray *)allChildNodeWithKnowledgeModel:(TreeModel *)model;
 
+-(id)initModelWithDictionary:(NSDictionary *)dic;
+
 @end

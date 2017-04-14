@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2453D25F20EAAE9BDFF820CAB350F846"
+               BlueprintIdentifier = "9F1900A2AF1ABC97E7ED887E03CDF4CB"
                BuildableName = "Pods_KnowledgeTree.framework"
                BlueprintName = "Pods-KnowledgeTree"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2453D25F20EAAE9BDFF820CAB350F846"
+            BlueprintIdentifier = "9F1900A2AF1ABC97E7ED887E03CDF4CB"
             BuildableName = "Pods_KnowledgeTree.framework"
             BlueprintName = "Pods-KnowledgeTree"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -7,7 +7,7 @@
 //
 
 #import "TreeModel.h"
-
+#import "MJExtension.h"
 @implementation TreeModel
 +(NSDictionary *)replacedKeyFromPropertyName{
     return @{@"knowledgeID":@"id",@"childrenKnowledgeModelArray":@"children"};
@@ -36,4 +36,12 @@
     }
     return mArray;
 }
+-(id)initModelWithDictionary:(NSDictionary *)dic{
+    self = [super init];
+    if(self){
+        self = [[self class] objectWithKeyValues:dic];
+    }
+    return self;
+}
+
 @end
