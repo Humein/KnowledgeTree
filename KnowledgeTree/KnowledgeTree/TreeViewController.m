@@ -15,6 +15,7 @@
 @property(nonatomic,strong) NSMutableArray *dataSource;
 @property(nonatomic,strong) NSMutableArray *cellViewModelArray;
 @property(nonatomic,strong) NSMutableArray *levelOneModelArray;
+@property (nonatomic) BOOL                  sectionFirstLoad;
 @end
 
 @implementation TreeViewController
@@ -38,6 +39,7 @@
     [super viewDidLoad];
     self.view.backgroundColor  = [UIColor grayColor];
     [self initTableView];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -48,6 +50,14 @@
 #pragma mark - UITableView Delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
+//    if (self.sectionFirstLoad == NO) {
+//        
+//        return 0;
+//        
+//    } else {
+//        
+//        return 1;
+//    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -98,14 +108,55 @@
         [_tableView deleteRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationFade];
     }
     [_tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    
+    self.sectionFirstLoad = YES;
 }
+//给cell添加动画  摇摆从0到完全显示
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    
+//    CATransform3D  transform;
+//    transform = CATransform3DMakeRotation((CGFloat)((90.0 * M_PI) / 180.0), 0.0, 0.7, 0.4);
+//    transform.m34 = 1.0/-600;
+//    cell.layer.shadowColor = [[UIColor blackColor] CGColor];
+//    cell.layer.shadowOffset = CGSizeMake(10, 10);
+//    cell.alpha = 0;
+//    cell.layer.transform = transform;
+//    cell.layer.anchorPoint = CGPointMake(0, 0.5);//锚点
+//    if(cell.layer.position.x != 0){
+//        cell.layer.position = CGPointMake(0, cell.layer.position.y);
+//    }
+//    [UIView beginAnimations:@"transform" context:NULL];
+//    [UIView setAnimationDuration:0.8];
+//    cell.layer.transform = CATransform3DIdentity;
+//    cell.alpha = 1;
+//    cell.layer.shadowOffset = CGSizeMake(0, 0);
+//    [UIView commitAnimations];
+    
+//    if (self.sectionFirstLoad == NO) {
+//        //设置Cell的动画效果为3D效果
+//        //设置x和y的初始值为0.1；
+//        cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
+//        //x和y的最终值为1
+//        [UIView animateWithDuration:1 animations:^{
+//            cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+//        }];
+//        
+//    }else{
+//        
+//        return;
+//    }
 
+}
 #pragma mark - PrivateMethod
 -(void)initTableView{
     self.dataSource = [[NSMutableArray alloc]init];
     self.cellViewModelArray = [[NSMutableArray alloc]init];
     self.levelOneModelArray = [[NSMutableArray alloc]init];
     [self.view addSubview:self.tableView];
+//    [self firstLoadDataAnimation];
+   
 }
 
 - (void)loadData {
@@ -123,6 +174,7 @@
             [weakSelf.cellViewModelArray removeAllObjects];
             [weakSelf.cellViewModelArray addObjectsFromArray:[self generateCellViewModelArrayWithKnowledgeModelArray:modelArray]];
             [weakSelf.tableView reloadData];
+            
         }else{
             
         }
@@ -177,6 +229,34 @@
 -(BOOL)isLevelOneModelWithCellViewModel:(TreeViewModel *)cellModel{
     return [self.levelOneModelArray containsObject:cellModel.knowledgeModel];
 }
+
+- (void)firstLoadDataAnimation {
+    __weak typeof(self) weakSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+                weakSelf.sectionFirstLoad = YES;
+                NSIndexSet *indexSet  = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, self.dataSource.count)];
+        
+                [weakSelf.tableView insertSections:indexSet withRowAnimation:UITableViewRowAnimationFade];
+    });
+    
+//    [GCDQueue executeInMainQueue:^{
+//        
+//        // Extend sections.
+//        self.sectionFirstLoad = YES;
+//        NSIndexSet *indexSet  = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, self.classModels.count)];
+//        [self.tableView insertSections:indexSet withRowAnimation:UITableViewRowAnimationFade];
+//        
+//        [GCDQueue executeInMainQueue:^{
+//            
+//            // Extend cells.
+//            [self customHeaderFooterView:self.tmpHeadView event:nil];
+//            
+//        } afterDelaySecs:5.f];
+//        
+//    } afterDelaySecs:10.f];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
