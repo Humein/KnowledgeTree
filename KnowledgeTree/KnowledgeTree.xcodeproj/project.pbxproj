@@ -21,6 +21,7 @@
 		336D7D551E9E480600E82E43 /* TreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 336D7D541E9E480600E82E43 /* TreeModel.m */; };
 		336D7D581E9E4BE000E82E43 /* UIView+ViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 336D7D571E9E4BE000E82E43 /* UIView+ViewFrame.m */; };
 		336D7D5B1E9E509B00E82E43 /* NetWorkRequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 336D7D5A1E9E509B00E82E43 /* NetWorkRequestAPI.m */; };
+		33AC7F9B1EAF55510073E14E /* CreatTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AC7F9A1EAF55510073E14E /* CreatTreeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		336D7D571E9E4BE000E82E43 /* UIView+ViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewFrame.m"; sourceTree = "<group>"; };
 		336D7D591E9E509B00E82E43 /* NetWorkRequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkRequestAPI.h; sourceTree = "<group>"; };
 		336D7D5A1E9E509B00E82E43 /* NetWorkRequestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkRequestAPI.m; sourceTree = "<group>"; };
+		33AC7F991EAF55510073E14E /* CreatTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatTreeView.h; sourceTree = "<group>"; };
+		33AC7F9A1EAF55510073E14E /* CreatTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatTreeView.m; sourceTree = "<group>"; };
 		3B2397C5FA6D722EB0B157D5 /* Pods-KnowledgeTree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeTree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeTree/Pods-KnowledgeTree.debug.xcconfig"; sourceTree = "<group>"; };
 		C45D4155E933F1AD0D7C4E45 /* Pods_KnowledgeTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowledgeTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FD5274FE253F086B858584 /* Pods-KnowledgeTree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeTree.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeTree/Pods-KnowledgeTree.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				3368A3671E9E040300DF4AB4 /* AppDelegate.m */,
 				3368A3691E9E040300DF4AB4 /* TreeViewController.h */,
 				3368A36A1E9E040300DF4AB4 /* TreeViewController.m */,
+				33AC7F991EAF55510073E14E /* CreatTreeView.h */,
+				33AC7F9A1EAF55510073E14E /* CreatTreeView.m */,
 				336D7D591E9E509B00E82E43 /* NetWorkRequestAPI.h */,
 				336D7D5A1E9E509B00E82E43 /* NetWorkRequestAPI.m */,
 				336D7D4D1E9E477E00E82E43 /* TreeViewCell.h */,
@@ -260,6 +265,7 @@
 			files = (
 				336D7D551E9E480600E82E43 /* TreeModel.m in Sources */,
 				336D7D5B1E9E509B00E82E43 /* NetWorkRequestAPI.m in Sources */,
+				33AC7F9B1EAF55510073E14E /* CreatTreeView.m in Sources */,
 				336D7D521E9E47E600E82E43 /* TreeViewModel.m in Sources */,
 				336D7D4F1E9E477E00E82E43 /* TreeViewCell.m in Sources */,
 				3368A36B1E9E040300DF4AB4 /* TreeViewController.m in Sources */,
