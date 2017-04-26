@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CreatTreeView : UIView
+@property (nonatomic ,strong) void(^valueBlcok)(NSString *value);
 - (instancetype)initWithFrame:(CGRect)frame dataSource:(NSMutableArray<NSMutableArray *> *)dataSource cellViewModelArray:(NSMutableArray<NSMutableArray *> *)cellViewModelArray  levelOneModelArray:(NSMutableArray<NSMutableArray *> *)levelOneModelArray;
 @end

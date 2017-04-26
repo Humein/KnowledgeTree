@@ -74,6 +74,20 @@
 
 }
 
+#pragma mark - QuestionTableViewCellDelegate Delegate
+-(void)checkClick:(TreeViewModel *)viewModel{
+    NSLog(@"viewModel.knowledgeModel.rnum=====%@",viewModel.knowledgeModel.wnum);
+    if (_valueBlcok) {
+        _valueBlcok(viewModel.knowledgeModel.wnum);
+    }
+}
+-(void)restartClick:(TreeViewModel *)viewModel
+{
+     NSLog(@"viewModel.knowledgeModel.knowledgeID===%@",viewModel.knowledgeModel.knowledgeID);
+    if (_valueBlcok) {
+        _valueBlcok(viewModel.knowledgeModel.knowledgeID);
+    }
+}
 
 #pragma mark - UITableView Delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

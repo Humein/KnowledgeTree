@@ -11,12 +11,12 @@
 #import "TreeModel.h"
 #import "TreeViewCell.h"
 #import "CreatTreeView.h"
-@interface TreeViewController ()
+@interface TreeViewController ()<QuestionTableViewCellDelegate>
 
 @property(nonatomic,strong) NSMutableArray *dataSource;
 @property(nonatomic,strong) NSMutableArray *cellViewModelArray;
 @property(nonatomic,strong) NSMutableArray *levelOneModelArray;
-
+@property(nonatomic,strong) CreatTreeView *treeView;
 @end
 
 @implementation TreeViewController
@@ -55,8 +55,9 @@
             
             
             CGRect frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64);
-            CreatTreeView *treeView =[[CreatTreeView alloc]initWithFrame:frame dataSource:weakSelf.dataSource  cellViewModelArray:weakSelf.cellViewModelArray levelOneModelArray:weakSelf.levelOneModelArray ];
-            [self.view addSubview:treeView];
+            weakSelf.treeView =[[CreatTreeView alloc]initWithFrame:frame dataSource:weakSelf.dataSource  cellViewModelArray:weakSelf.cellViewModelArray levelOneModelArray:weakSelf.levelOneModelArray];
+            [weakSelf valueBlcokClick];
+            [weakSelf.view addSubview:weakSelf.treeView];
         }else{
             
         }
@@ -76,7 +77,12 @@
     return mArray;
 }
 
-
+-(void)valueBlcokClick{
+    _treeView.valueBlcok = ^(NSString *value) {
+//        TODO Click Action
+        NSLog(@"value====%@",value);
+    };
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
