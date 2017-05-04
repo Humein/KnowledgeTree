@@ -9,6 +9,7 @@
 #import "CreatTreeView.h"
 #import "TreeModel.h"
 #import "TreeViewCell.h"
+#import "UITableViewCell+AnimationType.h"
 @interface CreatTreeView()<UITableViewDelegate,UITableViewDataSource,QuestionTableViewCellDelegate>
 {
     
@@ -32,7 +33,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableFooterView = [[UIView alloc] init];
-//        [_tableView reloadData];
+        self.sectionFirstLoad = YES;
     }
     return _tableView;
 }
@@ -116,6 +117,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    self.sectionFirstLoad = NO;
     TreeViewModel *cellViewModel = [self.cellViewModelArray objectAtIndex:indexPath.row];
     
     if(cellViewModel.openstate == ErrorQuestionCellClose){
@@ -142,13 +145,18 @@
         [_tableView deleteRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationFade];
     }
     [_tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+
     
-    self.sectionFirstLoad = YES;
 }
 #pragma mark - Cell Animation
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /// 在这里调用cell显示动画方法
+
     
+    if (self.sectionFirstLoad) {
+            [cell tableView:tableView forRowAtIndexPath:indexPath animationStyle: arc4random() % 10];
+    }
     
     //    CATransform3D  transform;
     //    transform = CATransform3DMakeRotation((CGFloat)((90.0 * M_PI) / 180.0), 0.0, 0.7, 0.4);

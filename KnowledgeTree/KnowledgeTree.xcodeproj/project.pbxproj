@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		26A49F985316854CEF638ED4 /* Pods_KnowledgeTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45D4155E933F1AD0D7C4E45 /* Pods_KnowledgeTree.framework */; };
+		331492561EBABE7D009146DF /* UITableViewCell+AnimationType.m in Sources */ = {isa = PBXBuildFile; fileRef = 331492551EBABE7D009146DF /* UITableViewCell+AnimationType.m */; };
 		3368A3651E9E040300DF4AB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3368A3641E9E040300DF4AB4 /* main.m */; };
 		3368A3681E9E040300DF4AB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3368A3671E9E040300DF4AB4 /* AppDelegate.m */; };
 		3368A36B1E9E040300DF4AB4 /* TreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3368A36A1E9E040300DF4AB4 /* TreeViewController.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		331492541EBABE7D009146DF /* UITableViewCell+AnimationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+AnimationType.h"; sourceTree = "<group>"; };
+		331492551EBABE7D009146DF /* UITableViewCell+AnimationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+AnimationType.m"; sourceTree = "<group>"; };
 		3368A3601E9E040300DF4AB4 /* KnowledgeTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowledgeTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3368A3641E9E040300DF4AB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3368A3661E9E040300DF4AB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 				336D7D5A1E9E509B00E82E43 /* NetWorkRequestAPI.m */,
 				336D7D4D1E9E477E00E82E43 /* TreeViewCell.h */,
 				336D7D4E1E9E477E00E82E43 /* TreeViewCell.m */,
+				331492541EBABE7D009146DF /* UITableViewCell+AnimationType.h */,
+				331492551EBABE7D009146DF /* UITableViewCell+AnimationType.m */,
 				336D7D501E9E47E600E82E43 /* TreeViewModel.h */,
 				336D7D511E9E47E600E82E43 /* TreeViewModel.m */,
 				336D7D531E9E480600E82E43 /* TreeModel.h */,
@@ -264,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				336D7D551E9E480600E82E43 /* TreeModel.m in Sources */,
+				331492561EBABE7D009146DF /* UITableViewCell+AnimationType.m in Sources */,
 				336D7D5B1E9E509B00E82E43 /* NetWorkRequestAPI.m in Sources */,
 				33AC7F9B1EAF55510073E14E /* CreatTreeView.m in Sources */,
 				336D7D521E9E47E600E82E43 /* TreeViewModel.m in Sources */,
