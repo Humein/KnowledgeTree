@@ -17,13 +17,29 @@
 @property(nonatomic,strong) NSMutableArray *cellViewModelArray;
 @property(nonatomic,strong) NSMutableArray *levelOneModelArray;
 @property(nonatomic,strong) CreatTreeView *treeView;
+@property(nonatomic,strong)UIScrollView * backScrollView;
+
 @end
 
 @implementation TreeViewController
+-(UIScrollView *)backScrollView{
+    if (!_backScrollView) {
+        _backScrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-64)];
+        _backScrollView.showsVerticalScrollIndicator=NO;
+        _backScrollView.showsHorizontalScrollIndicator=NO;
+        _backScrollView.bounces=YES;
+        _backScrollView.backgroundColor = [UIColor whiteColor];
+        _backScrollView.contentSize=CGSizeMake(_backScrollView.frame.size.width, _backScrollView.frame.size.height);
+        
+    }
+    return _backScrollView;
+}
 #pragma mark - LifteCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor  = [UIColor grayColor];
+    [self.view addSubview:self.backScrollView];
+    
     [self initTableView];
 
 }
@@ -57,13 +73,32 @@
             CGRect frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64);
             weakSelf.treeView =[[CreatTreeView alloc]initWithFrame:frame dataSource:weakSelf.dataSource  cellViewModelArray:weakSelf.cellViewModelArray levelOneModelArray:weakSelf.levelOneModelArray];
             [weakSelf valueBlcokClick];
-            [weakSelf.view addSubview:weakSelf.treeView];
+            [weakSelf.backScrollView addSubview:weakSelf.treeView];
+            [weakSelf RemakeContentSize];
+
         }else{
             
         }
     } andFailure:^(NSString *errorMessage) {
         
     }];
+}
+-(void)RemakeContentSize{
+    
+    [self.treeView.tableView reloadData];
+    
+//    self.pointsTreeView.sd_layout
+//    .topSpaceToView(self.moduleView,10)
+//    .widthIs(self.backScrollView.width)
+//    .heightIs(self.pointsTreeView.tableView.contentSize.height+self.pointsTreeView.headTitle.height);
+//    
+    
+    _backScrollView.frame=CGRectMake(0, 0, self.view.frame.size.width,self.view.frame.size.height);
+    
+    _backScrollView.contentSize=CGSizeMake(_backScrollView.frame.size.width, self.treeView.tableView.contentSize.height+10+self.backScrollView.contentSize.height+40+46);
+    
+    
+    
 }
 - (NSArray *)generateCellViewModelArrayWithKnowledgeModelArray:(NSArray *)modelArray{
     NSMutableArray *mArray = [[NSMutableArray alloc]init];
@@ -78,9 +113,17 @@
 }
 
 -(void)valueBlcokClick{
+    __weak typeof(self) weakSelf = self;
+
     _treeView.valueBlcok = ^(NSString *value) {
 //        TODO Click Action
         NSLog(@"value====%@",value);
+        [weakSelf RemakeContentSize];
+
+    };
+    
+    _treeView.cellClickBlcok = ^(NSInteger row) {
+        [weakSelf RemakeContentSize];
     };
 }
 

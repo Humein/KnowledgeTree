@@ -14,7 +14,6 @@
 {
     
 }
-@property(nonatomic,strong) UITableView *tableView;
 @property(nonatomic,copy) NSMutableArray *dataSource;
 @property(nonatomic,copy) NSMutableArray *cellViewModelArray;
 @property(nonatomic,copy) NSMutableArray *levelOneModelArray;
@@ -32,6 +31,9 @@
         _tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        //        设置为NO 会出现  滑动多次后 didSelectRowAtIndexPath 点击2次才会调用，原因不明
+
+//        _tableView.scrollEnabled = NO;
         _tableView.tableFooterView = [[UIView alloc] init];
         self.sectionFirstLoad = YES;
     }
@@ -145,7 +147,9 @@
         [_tableView deleteRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationFade];
     }
     [_tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-
+    if (_cellClickBlcok) {
+        _cellClickBlcok(indexPath.row);
+    }
     
 }
 #pragma mark - Cell Animation
