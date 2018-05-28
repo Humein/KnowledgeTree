@@ -8,50 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		26A49F985316854CEF638ED4 /* Pods_KnowledgeTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45D4155E933F1AD0D7C4E45 /* Pods_KnowledgeTree.framework */; };
-		331492561EBABE7D009146DF /* UITableViewCell+AnimationType.m in Sources */ = {isa = PBXBuildFile; fileRef = 331492551EBABE7D009146DF /* UITableViewCell+AnimationType.m */; };
 		3368A3651E9E040300DF4AB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3368A3641E9E040300DF4AB4 /* main.m */; };
 		3368A3681E9E040300DF4AB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3368A3671E9E040300DF4AB4 /* AppDelegate.m */; };
-		3368A36B1E9E040300DF4AB4 /* TreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3368A36A1E9E040300DF4AB4 /* TreeViewController.m */; };
 		3368A36E1E9E040300DF4AB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3368A36C1E9E040300DF4AB4 /* Main.storyboard */; };
 		3368A3711E9E040300DF4AB4 /* KnowledgeTree.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3368A36F1E9E040300DF4AB4 /* KnowledgeTree.xcdatamodeld */; };
 		3368A3731E9E040300DF4AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3368A3721E9E040300DF4AB4 /* Assets.xcassets */; };
 		3368A3761E9E040300DF4AB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3368A3741E9E040300DF4AB4 /* LaunchScreen.storyboard */; };
 		3368A3821E9E096500DF4AB4 /* Tree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3368A3811E9E096500DF4AB4 /* Tree.plist */; };
-		336D7D4F1E9E477E00E82E43 /* TreeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 336D7D4E1E9E477E00E82E43 /* TreeViewCell.m */; };
-		336D7D521E9E47E600E82E43 /* TreeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 336D7D511E9E47E600E82E43 /* TreeViewModel.m */; };
-		336D7D551E9E480600E82E43 /* TreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 336D7D541E9E480600E82E43 /* TreeModel.m */; };
 		336D7D581E9E4BE000E82E43 /* UIView+ViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 336D7D571E9E4BE000E82E43 /* UIView+ViewFrame.m */; };
-		336D7D5B1E9E509B00E82E43 /* NetWorkRequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 336D7D5A1E9E509B00E82E43 /* NetWorkRequestAPI.m */; };
-		33AC7F9B1EAF55510073E14E /* CreatTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AC7F9A1EAF55510073E14E /* CreatTreeView.m */; };
+		3373865D20BC0B2E00F7A140 /* doubleTableLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373865C20BC0B2E00F7A140 /* doubleTableLinkViewController.m */; };
+		3399DFA220B3EDC1001149EC /* Tree.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3399DF9120B3EDC1001149EC /* Tree.plist */; };
+		3399DFA320B3EDC1001149EC /* TreeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399DF9420B3EDC1001149EC /* TreeViewModel.m */; };
+		3399DFA420B3EDC1001149EC /* CreatTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399DF9720B3EDC1001149EC /* CreatTreeView.m */; };
+		3399DFA520B3EDC1001149EC /* NetWorkRequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399DF9920B3EDC1001149EC /* NetWorkRequestAPI.m */; };
+		3399DFA620B3EDC1001149EC /* TreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399DF9A20B3EDC1001149EC /* TreeModel.m */; };
+		3399DFA720B3EDC1001149EC /* UIView+ViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399DF9B20B3EDC1001149EC /* UIView+ViewFrame.m */; };
+		3399DFA820B3EDC1001149EC /* UITableViewCell+AnimationType.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399DF9C20B3EDC1001149EC /* UITableViewCell+AnimationType.m */; };
+		3399DFA920B3EDC1001149EC /* TreeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399DF9F20B3EDC1001149EC /* TreeViewCell.m */; };
+		3399DFAA20B3EDC1001149EC /* TreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399DFA120B3EDC1001149EC /* TreeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		331492541EBABE7D009146DF /* UITableViewCell+AnimationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+AnimationType.h"; sourceTree = "<group>"; };
-		331492551EBABE7D009146DF /* UITableViewCell+AnimationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+AnimationType.m"; sourceTree = "<group>"; };
 		3368A3601E9E040300DF4AB4 /* KnowledgeTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowledgeTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3368A3641E9E040300DF4AB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3368A3661E9E040300DF4AB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3368A3671E9E040300DF4AB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3368A3691E9E040300DF4AB4 /* TreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeViewController.h; sourceTree = "<group>"; };
-		3368A36A1E9E040300DF4AB4 /* TreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeViewController.m; sourceTree = "<group>"; };
 		3368A36D1E9E040300DF4AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3368A3701E9E040300DF4AB4 /* KnowledgeTree.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KnowledgeTree.xcdatamodel; sourceTree = "<group>"; };
 		3368A3721E9E040300DF4AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3368A3751E9E040300DF4AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3368A3771E9E040300DF4AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3368A3811E9E096500DF4AB4 /* Tree.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tree.plist; sourceTree = "<group>"; };
-		336D7D4D1E9E477E00E82E43 /* TreeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeViewCell.h; sourceTree = "<group>"; };
-		336D7D4E1E9E477E00E82E43 /* TreeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeViewCell.m; sourceTree = "<group>"; };
-		336D7D501E9E47E600E82E43 /* TreeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeViewModel.h; sourceTree = "<group>"; };
-		336D7D511E9E47E600E82E43 /* TreeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeViewModel.m; sourceTree = "<group>"; };
-		336D7D531E9E480600E82E43 /* TreeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeModel.h; sourceTree = "<group>"; };
-		336D7D541E9E480600E82E43 /* TreeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeModel.m; sourceTree = "<group>"; };
 		336D7D561E9E4BE000E82E43 /* UIView+ViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewFrame.h"; sourceTree = "<group>"; };
 		336D7D571E9E4BE000E82E43 /* UIView+ViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewFrame.m"; sourceTree = "<group>"; };
-		336D7D591E9E509B00E82E43 /* NetWorkRequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkRequestAPI.h; sourceTree = "<group>"; };
-		336D7D5A1E9E509B00E82E43 /* NetWorkRequestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkRequestAPI.m; sourceTree = "<group>"; };
-		33AC7F991EAF55510073E14E /* CreatTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatTreeView.h; sourceTree = "<group>"; };
-		33AC7F9A1EAF55510073E14E /* CreatTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatTreeView.m; sourceTree = "<group>"; };
+		3373865B20BC0B2E00F7A140 /* doubleTableLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = doubleTableLinkViewController.h; sourceTree = "<group>"; };
+		3373865C20BC0B2E00F7A140 /* doubleTableLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = doubleTableLinkViewController.m; sourceTree = "<group>"; };
+		3399DF9120B3EDC1001149EC /* Tree.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tree.plist; sourceTree = "<group>"; };
+		3399DF9220B3EDC1001149EC /* TreeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeModel.h; sourceTree = "<group>"; };
+		3399DF9320B3EDC1001149EC /* UIView+ViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewFrame.h"; sourceTree = "<group>"; };
+		3399DF9420B3EDC1001149EC /* TreeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeViewModel.m; sourceTree = "<group>"; };
+		3399DF9520B3EDC1001149EC /* UITableViewCell+AnimationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+AnimationType.h"; sourceTree = "<group>"; };
+		3399DF9620B3EDC1001149EC /* TreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeViewController.h; sourceTree = "<group>"; };
+		3399DF9720B3EDC1001149EC /* CreatTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatTreeView.m; sourceTree = "<group>"; };
+		3399DF9820B3EDC1001149EC /* TreeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeViewCell.h; sourceTree = "<group>"; };
+		3399DF9920B3EDC1001149EC /* NetWorkRequestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkRequestAPI.m; sourceTree = "<group>"; };
+		3399DF9A20B3EDC1001149EC /* TreeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeModel.m; sourceTree = "<group>"; };
+		3399DF9B20B3EDC1001149EC /* UIView+ViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewFrame.m"; sourceTree = "<group>"; };
+		3399DF9C20B3EDC1001149EC /* UITableViewCell+AnimationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+AnimationType.m"; sourceTree = "<group>"; };
+		3399DF9D20B3EDC1001149EC /* TreeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeViewModel.h; sourceTree = "<group>"; };
+		3399DF9E20B3EDC1001149EC /* NetWorkRequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkRequestAPI.h; sourceTree = "<group>"; };
+		3399DF9F20B3EDC1001149EC /* TreeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeViewCell.m; sourceTree = "<group>"; };
+		3399DFA020B3EDC1001149EC /* CreatTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatTreeView.h; sourceTree = "<group>"; };
+		3399DFA120B3EDC1001149EC /* TreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeViewController.m; sourceTree = "<group>"; };
 		3B2397C5FA6D722EB0B157D5 /* Pods-KnowledgeTree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeTree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeTree/Pods-KnowledgeTree.debug.xcconfig"; sourceTree = "<group>"; };
 		C45D4155E933F1AD0D7C4E45 /* Pods_KnowledgeTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowledgeTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FD5274FE253F086B858584 /* Pods-KnowledgeTree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnowledgeTree.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnowledgeTree/Pods-KnowledgeTree.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,22 +107,10 @@
 		3368A3621E9E040300DF4AB4 /* KnowledgeTree */ = {
 			isa = PBXGroup;
 			children = (
+				3399DFAB20B3EDD6001149EC /* FolderTree */,
+				3399DF9020B3EDC1001149EC /* KnowLedgeTree */,
 				3368A3661E9E040300DF4AB4 /* AppDelegate.h */,
 				3368A3671E9E040300DF4AB4 /* AppDelegate.m */,
-				3368A3691E9E040300DF4AB4 /* TreeViewController.h */,
-				3368A36A1E9E040300DF4AB4 /* TreeViewController.m */,
-				33AC7F991EAF55510073E14E /* CreatTreeView.h */,
-				33AC7F9A1EAF55510073E14E /* CreatTreeView.m */,
-				336D7D591E9E509B00E82E43 /* NetWorkRequestAPI.h */,
-				336D7D5A1E9E509B00E82E43 /* NetWorkRequestAPI.m */,
-				336D7D4D1E9E477E00E82E43 /* TreeViewCell.h */,
-				336D7D4E1E9E477E00E82E43 /* TreeViewCell.m */,
-				331492541EBABE7D009146DF /* UITableViewCell+AnimationType.h */,
-				331492551EBABE7D009146DF /* UITableViewCell+AnimationType.m */,
-				336D7D501E9E47E600E82E43 /* TreeViewModel.h */,
-				336D7D511E9E47E600E82E43 /* TreeViewModel.m */,
-				336D7D531E9E480600E82E43 /* TreeModel.h */,
-				336D7D541E9E480600E82E43 /* TreeModel.m */,
 				3368A36C1E9E040300DF4AB4 /* Main.storyboard */,
 				3368A3721E9E040300DF4AB4 /* Assets.xcassets */,
 				3368A3741E9E040300DF4AB4 /* LaunchScreen.storyboard */,
@@ -135,6 +131,39 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		3399DF9020B3EDC1001149EC /* KnowLedgeTree */ = {
+			isa = PBXGroup;
+			children = (
+				3399DF9120B3EDC1001149EC /* Tree.plist */,
+				3399DF9220B3EDC1001149EC /* TreeModel.h */,
+				3399DF9320B3EDC1001149EC /* UIView+ViewFrame.h */,
+				3399DF9420B3EDC1001149EC /* TreeViewModel.m */,
+				3399DF9520B3EDC1001149EC /* UITableViewCell+AnimationType.h */,
+				3399DF9620B3EDC1001149EC /* TreeViewController.h */,
+				3399DF9720B3EDC1001149EC /* CreatTreeView.m */,
+				3399DF9820B3EDC1001149EC /* TreeViewCell.h */,
+				3399DF9920B3EDC1001149EC /* NetWorkRequestAPI.m */,
+				3399DF9A20B3EDC1001149EC /* TreeModel.m */,
+				3399DF9B20B3EDC1001149EC /* UIView+ViewFrame.m */,
+				3399DF9C20B3EDC1001149EC /* UITableViewCell+AnimationType.m */,
+				3399DF9D20B3EDC1001149EC /* TreeViewModel.h */,
+				3399DF9E20B3EDC1001149EC /* NetWorkRequestAPI.h */,
+				3399DF9F20B3EDC1001149EC /* TreeViewCell.m */,
+				3399DFA020B3EDC1001149EC /* CreatTreeView.h */,
+				3399DFA120B3EDC1001149EC /* TreeViewController.m */,
+			);
+			path = KnowLedgeTree;
+			sourceTree = "<group>";
+		};
+		3399DFAB20B3EDD6001149EC /* FolderTree */ = {
+			isa = PBXGroup;
+			children = (
+				3373865B20BC0B2E00F7A140 /* doubleTableLinkViewController.h */,
+				3373865C20BC0B2E00F7A140 /* doubleTableLinkViewController.m */,
+			);
+			path = FolderTree;
+			sourceTree = SOURCE_ROOT;
 		};
 		B236C66C7C9FF4D924B82784 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -206,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3399DFA220B3EDC1001149EC /* Tree.plist in Resources */,
 				3368A3821E9E096500DF4AB4 /* Tree.plist in Resources */,
 				3368A3761E9E040300DF4AB4 /* LaunchScreen.storyboard in Resources */,
 				3368A3731E9E040300DF4AB4 /* Assets.xcassets in Resources */,
@@ -268,17 +298,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				336D7D551E9E480600E82E43 /* TreeModel.m in Sources */,
-				331492561EBABE7D009146DF /* UITableViewCell+AnimationType.m in Sources */,
-				336D7D5B1E9E509B00E82E43 /* NetWorkRequestAPI.m in Sources */,
-				33AC7F9B1EAF55510073E14E /* CreatTreeView.m in Sources */,
-				336D7D521E9E47E600E82E43 /* TreeViewModel.m in Sources */,
-				336D7D4F1E9E477E00E82E43 /* TreeViewCell.m in Sources */,
-				3368A36B1E9E040300DF4AB4 /* TreeViewController.m in Sources */,
 				3368A3681E9E040300DF4AB4 /* AppDelegate.m in Sources */,
 				3368A3711E9E040300DF4AB4 /* KnowledgeTree.xcdatamodeld in Sources */,
 				3368A3651E9E040300DF4AB4 /* main.m in Sources */,
+				3399DFA720B3EDC1001149EC /* UIView+ViewFrame.m in Sources */,
+				3373865D20BC0B2E00F7A140 /* doubleTableLinkViewController.m in Sources */,
+				3399DFA820B3EDC1001149EC /* UITableViewCell+AnimationType.m in Sources */,
+				3399DFA520B3EDC1001149EC /* NetWorkRequestAPI.m in Sources */,
+				3399DFA920B3EDC1001149EC /* TreeViewCell.m in Sources */,
+				3399DFA320B3EDC1001149EC /* TreeViewModel.m in Sources */,
+				3399DFA420B3EDC1001149EC /* CreatTreeView.m in Sources */,
 				336D7D581E9E4BE000E82E43 /* UIView+ViewFrame.m in Sources */,
+				3399DFAA20B3EDC1001149EC /* TreeViewController.m in Sources */,
+				3399DFA620B3EDC1001149EC /* TreeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
